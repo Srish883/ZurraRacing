@@ -446,6 +446,109 @@ function TeamPage({activeDept,setActiveDept}){
 //CONTESTS
 const CONTESTS_DATA = [
   {
+    name: "Supra SAE India 2024",
+    type: "National · 2024",
+    url: "https://supraindia.in/",
+  },
+  {
+    name: "FMAE FFS India 2024",
+    type: "National · 2024",
+    url: "https://www.fmae.in/",
+  },
+  {
+    name: "Formula Imperial",
+    type: "National · 2023",
+    url: "https://www.formulaimperial.in/",
+  },
+];
+
+function ContestsPage() {
+  return (
+    <InnerPage
+      eyebrow="03 — Contests"
+      headline={<>Where We <span style={{ color: GOLD }}>Compete</span></>}
+      sub="From regional circuits to international tracks, ZUURA takes on the best student engineering teams in the world."
+    >
+      <div style={{ display: "flex", flexDirection: "column", gap: 2, marginTop: 16 }}>
+        {CONTESTS_DATA.map((c, i) => (
+          <a
+            key={i}
+            href={c.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              padding: "36px 44px",
+              border: `1px solid ${GOLD_DIM}`,
+              background: "rgba(255,255,255,.02)",
+              textDecoration: "none",
+              transition: "all .25s",
+              cursor: "pointer",
+              position: "relative",
+              overflow: "hidden",
+            }}
+            onMouseEnter={e => {
+              e.currentTarget.style.background = "rgba(212,160,23,.06)";
+              e.currentTarget.style.borderColor = GOLD;
+            }}
+            onMouseLeave={e => {
+              e.currentTarget.style.background = "rgba(255,255,255,.02)";
+              e.currentTarget.style.borderColor = GOLD_DIM;
+            }}
+          >
+            <div
+              style={{
+                position: "absolute",
+                left: 0, top: 0, bottom: 0,
+                width: 3,
+                background: GOLD,
+                opacity: 0,
+                transition: "opacity .25s",
+              }}
+            />
+            
+            <div>
+              <div style={{
+                fontSize: ".58rem",
+                letterSpacing: ".45em",
+                color: MUTED,
+                textTransform: "uppercase",
+                marginBottom: 10,
+              }}>
+                {c.type}
+              </div>
+
+              <div style={{
+                fontFamily: "'Bebas Neue', sans-serif",
+                fontSize: "clamp(1.8rem, 4vw, 3rem)",
+                letterSpacing: ".06em",
+                color: TEXT,
+                lineHeight: 1,
+              }}>
+                {c.name}
+              </div>
+            </div>
+
+            <span style={{
+              fontFamily: "'Bebas Neue', sans-serif",
+              fontSize: "1.1rem",
+              letterSpacing: ".2em",
+              color: GOLD,
+              flexShrink: 0,
+              marginLeft: 32,
+            }}>
+              VISIT ↗
+            </span>
+          </a>
+        ))}
+      </div>
+    </InnerPage>
+  );
+}
+/*const CONTESTS_DATA = [
+  {
     //year:"2024",
     //loc:"Buddh International Circuit, Greater Noida, Uttar Pradesh, India",
     type:"National",
@@ -481,10 +584,10 @@ const CONTESTS_DATA = [
 ];
 
 function ContestsPage({setActivePage,setHighlightCar}){
-  /*const handleCarClick = (carId)=>{
+  const handleCarClick = (carId)=>{
     setHighlightCar(carId);
     setActivePage("cars");
-  };*/
+  };
 
   return(
     <InnerPage
@@ -504,13 +607,12 @@ function ContestsPage({setActivePage,setHighlightCar}){
             borderBottom:i<CONTESTS_DATA.length-1?`1px solid ${GOLD_DIM}`:"none",
           }}
         >
-          {/* LEFT — year + location */}
+          
           <div>
             <div style={{fontFamily:"'Bebas Neue',sans-serif",fontSize:"2.5rem",color:GOLD,lineHeight:1}}>{c.year}</div>
             <div style={{fontSize:".6rem",letterSpacing:".4em",color:MUTED,textTransform:"uppercase",lineHeight:1.5}}>{c.loc}</div>
           </div>
 
-          {/* CENTER — content */}
           <div>
             <div style={{display:"inline-block",padding:"3px 10px",fontSize:".55rem",letterSpacing:".4em",textTransform:"uppercase",background:GOLD_DIM,color:GOLD,marginBottom:10}}>{c.type}</div>
             <div style={{fontFamily:"'Bebas Neue',sans-serif",fontSize:"1.6rem",letterSpacing:".06em",marginBottom:8}}>{c.name}</div>
@@ -519,7 +621,7 @@ function ContestsPage({setActivePage,setHighlightCar}){
               {c.tags.map(([t,v],j)=>(
                 <span key={j} style={{padding:"4px 12px",fontSize:".58rem",letterSpacing:".3em",textTransform:"uppercase",border:`1px solid ${v==="award"?GOLD:v==="hi"?"rgba(212,160,23,.5)":GOLD_DIM}`,color:v==="award"?GOLD:v==="hi"?"rgba(212,160,23,.8)":MUTED,background:v==="award"?"rgba(212,160,23,.08)":"transparent"}}>{t}</span>
               ))}
-              {/* ── Car link button ── */}
+             
               <button
                 onClick={()=>handleCarClick(c.carId)}
                 style={{
@@ -536,7 +638,7 @@ function ContestsPage({setActivePage,setHighlightCar}){
             </div>
           </div>
 
-          {/* RIGHT — photo */}
+          
           <div>
             <button
               onClick={()=>handleCarClick(c.carId)}
@@ -564,7 +666,7 @@ function ContestsPage({setActivePage,setHighlightCar}){
       ))}
     </InnerPage>
   );
-}
+}*/
 
 
 //FLAGSHIP
