@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from "react";
-import img_bhuvan from "./GROUP FOTU/Bhuvan.jpg";
+import img_bhuvan from "./Bhuvan.jpeg";
 import img_arnav from "./GROUP FOTU/Anav Mendiratta.jpg";
 import img_sou from "./GROUP FOTU/Soumya Ranjan Moharana.jpg";
-import img_geo from "./GROUP FOTU/Georgy.jpg";
+import img_geo from "./Georgy.jpeg";
 import img_shantanu from "./GROUP FOTU/Shanthanu Rege.jpg";
 import img_isha from "./GROUP FOTU/Isha.jpg";
 import img_tarun from "./GROUP FOTU/Tarun Balamurugan.jpg";
@@ -39,11 +39,11 @@ import things_img from "./ThingSpeak.png";
 import ppt_img from "./PPT Power Tools.png";
 import ping_img from "./Pingel.png";
 import ansys_img from "./Ansys.png";
-import form_imp from "./formula_imperial.png";
+//import form_imp from "./formula_imperial.png";
 import solidworks_img from "./DS SolidWorks.png";
 import altium_img from "./Altium.png";
-import img_supra from "./supra_sae.png";
-import img_fmae from "./fmae.png";
+//import img_supra from "./supra_sae.png";
+//import img_fmae from "./fmae.png";
 import agni_img from "./Agni Motors.png";
 import adv_img from "./Advanced Composites.jpeg";
 import asap_img from "./ASAP Motorsports.png";
@@ -61,6 +61,14 @@ import LOGO_IMG from "./Logo.png";
 import ig from "./ig.png";
 import li from "./linkedin.png";
 import yt from "./youtube.png";
+import img_zfr01 from "./zfr01.png";
+import img_zfr02 from "./zfr02.png";
+import img_zfr03 from "./zfr03.png";
+import img_zfr04 from "./zfr04.png";
+import img_zfr05 from "./zfr05.png";
+import img_zfr06 from "./zfr06.png";
+import img_zfr07 from "./zfr07.png";
+import img_zfr08 from "./zfr08.png";
 const GOLD = "#D4A017";
 const GOLD_DIM = "rgba(212,160,23,.18)";
 const GOLD_MID = "rgba(212,160,23,.45)";
@@ -236,12 +244,12 @@ function GhostBtn({children,onClick}){return <button onClick={onClick} style={{p
 //Team Data
 const DEPARTMENTS=[
   {id:"board",icon:"",order:1,name:"Board",tagline:"",desc:"",members:[{name:"Duggi Bhuvan Reddy",role:"Team Captain",img:img_bhuvan},{name:"Soumya Ranjan Moharana",role:"Vice Captain",img:img_sou},{name:"Arnav Mendiratta",role:"Team Manager",img:img_arnav},{name:"Isha Prajapati",role:"Deputy Team Manager",img:img_isha}]},
-  {id:"aero",icon:"💨",order:2,name:"Aerodynamics",tagline:"Shape the Air, Shape the Lap Time",desc:"Our custom designed aerodynamic package expertly channels airflow to maximise downforce and minimise drag, keeping our electric racer glued to the track.",members:[{name:"Soumya Porwal",role:"Department Head",img:img_soumya_p},{name:"Shourya Sanjay Hawal",role:"",img:img_dusht},{name:"Sreeparvathi Devesh",role:"",img:img_sreeparvathi},{name:"Mohammed Shaahid M",role:"",img:img_shaahid},{name:"Shanthanu Nitin Rege",role:"",img:img_shantanu}]},
-  {id:"chassis",icon:"⚙️",order:3,name:"Chassis",tagline:"The Backbone of Every Build",desc:"Our chassis is a precision engineered, open cockpit structural assembly that forms the ultra stiff backbone of our electric racer.",members:[{name:"Georgy Mathew",role:"Department Head",img:img_geo},{name:"Prasanna S",role:"",img:img_prasanna},{name:"Megh C Singhi",role:"",img:img_megh},{name:"Vetrivel VP",role:"",img:img_vp},{name:"Jasakaran Singh",role:"",img:img_jasi}]},
-  {id:"powertrain",icon:"🔧",order:4,name:"Drivetrain",tagline:"Raw Power, Precisely Delivered",desc:"Our custom configured drivetrain leverages advanced drive by wire torque control, efficiently translating raw electric motor power into blistering straight line acceleration.",members:[{name:"Anumith M",role:"Department Head",img:img_anumith},{name:"Daksh Jain",role:"",img:img_daksh},{name:"ShrengeethRakkesh R",role:"",img:img_shrengeeth},{name:"Krishna Abhinav Nippani",role:"",img:img_abhi_k}]},
-  {id:"electronics",icon:"⚡",order:5,name:"Electrical",tagline:"The Nervous System of the Car",desc:"A custom configured Battery Management System and galvanically isolated low-voltage network constantly monitor our accumulator's vital signs to maximize performance and reliability.",members:[{name:"Avaneesh",role:"Department Head",img:img_avaneesh},{name:"Ankit",role:"",img:img_ankit},{name:"Abhinav Pramod",role:"",img:img_abhi_p},{name:"Rahul U",role:"",img:img_rahul_u},{name:"Seshanth P",role:"",img:img_seshanth},{name:"Swagat Mallik",role:"",img:img_swagat},{name:"Tharun Balamurugan",role:"",img:img_tarun},{name:"K Bala Trishank",role:"",img:img_trishank},{name:"Sreeram Pichaimani",role:"",img:img_sreeram}]},
-  {id:"suspension",icon:"🔩",order:6,name:"Vehicle Dynamics",tagline:"Control at Every Corner",desc:"Our fully operational suspension and rigid mechanical steering linkage deliver precise control and a minimum of 50mm of wheel travel to aggressively conquer tight circuits.",members:[{name:"Sumit Rohan",role:"Department Head",img:img_sumit},{name:"S. Gaurav Raghavendhar",role:"",img:img_gaurav},{name:"Sharath Atchayam",role:"",img:img_sharath},{name:"Jaishith R",role:"",img:img_jaishith},{name:"Bhaavya Sri",role:"",img:img_bhaavya}]},
-  {id:"business",icon:"📊",order:7,name:"Management",tagline:"The Engine Off the Track",desc:"Our management team drives the strategic vision, seamlessly translating complex engineering achievements into a compelling, investment-ready business case.",members:[{name:"Md. Irfan",role:"Department Head",img:img_irfan},{name:"Akhil Kumar",role:"",img:img_akhil},{name:"Khyati Chaturvedi",role:"",img:img_khyati},{name:"Srishtee Gupta",role:"Software",img:img_srish}]},
+  {id:"aero",icon:"💨",order:2,name:"Aerodynamics",tagline:"Shape the Air, Shape the Lap Time",desc:"Aerodynamics Department concentrates on utilizing the flow of air to ensure that vehicles have maximum grip and speed. We have two important forces to strike a balance; create downforce to enhance cornering stability and reduce drag to maintain high-speed efficiency. We design and optimize high-performance components such as wings, diffusers and bodywork using state-of-the-art computational fluid dynamics (CFD) and precision modeling. All curves will be designed in such a way that the car will be stabilized on the track giving the driver the assurance to take the car as far as it will go. Closing the gap between fluid theory and track performance we transform air resistance to a practical competitive edge. Finally, our department will ensure that the car is attached to the tarmac, and that it offers the required traction to cut important seconds off our lap times and push the limits of automotive engineering.",members:[{name:"Soumya Porwal",role:"Aerodynamics Lead",img:img_soumya_p},{name:"Shanthanu Nitin Rege",role:"HVAC LEAD",img:img_shantanu},{name:"Shourya Sanjay Hawal",role:"",img:img_dusht},{name:"Sreeparvathi Devesh",role:"",img:img_sreeparvathi},{name:"Mohammed Shaahid M",role:"",img:img_shaahid}]},
+  {id:"chassis",icon:"⚙️",order:3,name:"Chassis",tagline:"The Backbone of Every Build",desc:"Before the engine screams and the tires grip, there’s something stronger holding it all together — the chassis. Not just metal and welds, but the core of precision, control, and pure performance. Every line is calculated, every joint is intentional, built to take on forces most never see.Meet the Chassis Team — the ones who turn raw ideas into a machine that doesn’t just move, but dominates. From late-night CAD sessions to sparks flying in fabrication, this is where concepts become carbon and steel reality. Rigidity over compromise. Strength over shortcuts.Because when the car hits the track at full throttle, there’s no room for error — only trust in what’s built beneath.This isn’t just a structure. It’s the spine of speed, the cage of control, and the silent force behind every lap.",members:[{name:"Georgy Mathew",role:"Department Head",img:img_geo},{name:"Prasanna S",role:"",img:img_prasanna},{name:"Megh C Singhi",role:"",img:img_megh},{name:"Vetrivel VP",role:"",img:img_vp},{name:"Jasakaran Singh",role:"",img:img_jasi}]},
+  {id:"powertrain",icon:"🔧",order:4,name:"Drivetrain",tagline:"Raw Power, Precisely Delivered",desc:"The drivetrain division deals with the development of the power transfer mechanism which transfers the force produced by the engine or the motor from the source of generation to the wheel ends of the vehicle. This section of the department is vital in defining the performance and efficiency levels of the vehicles being developed. Some of the main elements under this department include transmission gears, differential gears, drive shafts, and associated components. Gear ratios and torque distribution form some of the major considerations of this division to optimize vehicle performance with regard to acceleration and maximum velocity. Drivetrain division may also collaborate with vehicle dynamics division in sports car design and development and other advanced automotive designs.",members:[{name:"Anumith M",role:"Department Head",img:img_anumith},{name:"Daksh Jain",role:"",img:img_daksh},{name:"ShrengeethRakkesh R",role:"",img:img_shrengeeth},{name:"Krishna Abhinav Nippani",role:"",img:img_abhi_k}]},
+  {id:"electronics",icon:"⚡",order:5,name:"Electrical",tagline:"The Nervous System of the Car",desc:"The electrical department is the backbone of the car. Every system on a formula EV runs through it — from the high-voltage architecture that actually drives the wheels, to the sensor networks that tell the team what the car is doing at any given moment. The team handles everything from schematic design and PCB layout to wiring, firmware, and track-side debugging. When something goes wrong during a run, it's usually electrical that figures it out first. The work is unglamorous a lot of the time — hours of continuity checks, thermal testing, and CAN bus debugging before the car ever sees the track. But it's also the department where a bad decision can either kill a lap time or fail scrutineering entirely. The electrical team doesn't just support the car; in a lot of ways, they define what it's capable of.",members:[{name:"Avaneesh",role:"Department Head",img:img_avaneesh},{name:"Ankit",role:"",img:img_ankit},{name:"Abhinav Pramod",role:"",img:img_abhi_p},{name:"Rahul U",role:"",img:img_rahul_u},{name:"Seshanth P",role:"",img:img_seshanth},{name:"Swagat Mallik",role:"",img:img_swagat},{name:"Tharun Balamurugan",role:"",img:img_tarun},{name:"K Bala Trishank",role:"", img: img_trishank },{ name : "Sreeram Pichaimani" , role : "" , img : img_sreeram } ] } ,
+  {id : "suspension" , icon : "🔩" , order : 6 , name : "Vehicle Dynamics" , tagline : "Control at Every Corner" , desc : "The Vehicle Dynamics (VD) Department in Zuura is responsible for shaping how the car behaves on track, ensuring optimal performance, stability, and control. It focuses on the design and development of suspension systems, steering geometry, and tire selection to maximize grip and responsiveness under varying conditions. The team uses simulations, data analysis, and real-world testing to fine-tune parameters such as weight distribution, damping, and kinematics. By working closely with other engineering divisions, VD ensures that vehicle characteristics align with overall design goals and competition requirements. Through a balance of analytical precision and practical validation, the department plays a key role in delivering a car that is predictable, efficient, and competitive on the track." , members : [ { name : "Sumit Rohan" , role : "Department Head" , img : img_sumit } , { name : "S. Gaurav Raghavendhar" , role : "" , img : img_gaurav } , { name : "Sharath Atchayam" , role : "" , img : img_sharath } , { name : "Jaishith R" , role : "" , img : img_jaishith } , { name : "Bhaavya Sri" , role : "" , img : img_bhaavya } ] } ,
+  {id :"business" , icon :"📊" , order : 7 , name :"Management" , tagline :"The Engine Off the Track" , desc :"The Management Department in Zuura ensures the project runs smoothly beyond the technical build. It coordinates planning, budgeting, sponsorship, marketing, and team operations. This department secures funding by reaching out to sponsors, maintaining partnerships, and managing financial resources responsibly. It also handles branding and public relations, including social media strategy, content creation, and event promotion to enhance the team’s visibility. Internally, management organizes timelines, tracks progress, and facilitates communication between engineering and non-technical divisions to keep everyone aligned with goals and deadlines. Additionally, it oversees logistics such as travel, competition registrations, and documentation. By balancing organizational structure with creative outreach, the Management Department plays a critical role in ensuring the team is financially sustainable, professionally represented, and competitively prepared.",members:[{name:"Md. Irfan",role:"Department Head",img:img_irfan },{name:"Akhil Kumar",role:"",img:img_akhil},{name:"Khyati Chaturvedi",role:"",img:img_khyati},{name:"Srishtee Gupta",role:"Software",img:img_srish } ] }
 ];
 
 
@@ -292,10 +300,15 @@ function HomePage({setActivePage}){
 }
 
 //CARS
-const CARS_DATA = [
-  {id:"zrf08", num:"01",badge:"",bc:GOLD,tag:"Formula Imperial · Combustion",name:"ZRF-08",sub:"Prototype",desc:"1st in cost and manufacturing, 2nd in business presentation.",specs:[["200+","HP","Power"],["3.8","S","0–100 km/h"],["320","KG","Dry Weight"]]},
-  {id:"zr02",  num:"02",badge:"Electric",bc:"#3af",tag:"Formula SAE · Electric",name:"ZR-02",sub:"Electric",desc:"Our electric prototype designed for Formula SAE Electric. High-voltage battery pack, custom motor controllers, and regenerative braking — engineered for maximum efficiency.",specs:[["80","KW","Peak Power"],["4.1","S","0–100 km/h"],["290","KG","Dry Weight"]]},
-  {id:"zr03",  num:"03",badge:"Upcoming",bc:MUTED,tag:"Formula SAE · Combustion",name:"ZR-03",sub:"Gen III",desc:"Next-generation chassis in development. Optimized aerodynamics, revised suspension geometry and a target weight 15% lighter than ZR-01.",specs:[["220+","HP","Target Power"],["3.5","S","Target 0–100"],["270","KG","Target Weight"]]},
+/*const CARS_DATA = [
+  {id:"zfr01", img: img_zfr01, badge:"",bc:GOLD,tag:"FS-JAPAN . 2014",name:"ZFR-01",sub:"",desc:"Most cost efficient car in the event.",specs:[["","",""],["","",""],["","",""]]},
+  {id:"zfr02",  img: img_zfr02, num:"02",badge:"",bc:"#3af",tag:"FS-JAPAN & FDC . 2015",name:"ZFR-02",sub:"",desc:"Improved Documentation",specs:[["","",""],["","",""],["","",""]]},
+  {id:"zfr03",  img: img_zfr03, num:"03",badge:"",bc:MUTED,tag:"FS-ITALY . 2016",name:"ZFR-03",sub:"",desc:"Revamped Powertrain 20% lighter than ZFR-02",specs:[["","",""],["","",""],["","",""]]},
+  {id:"zfr04",  img: img_zfr04, num:"04",badge:"",bc:MUTED,tag:"FSAE-AUSTRALASIA . 2017",name:"ZFR-04",sub:"",desc:"First Indian team ever to clear technical inspection. Secured 16th Rank among CVs.",specs:[["","",""],["","",""],["","",""]]},
+  {id:"zfr05",  img: img_zfr05, num:"05",badge:"",bc:MUTED,tag:"FSAE-AUSTRALASIA . 2018",name:"ZFR-05",sub:"",desc:"7th in Business Presentation | 10th in Cost Analysis | 13th rank overall among CVs ",specs:[["","",""],["","",""],["","",""]]},
+  {id:"zfr06",  img: img_zfr06, num:"06",badge:"",bc:MUTED,tag:"FFS-INDIA . 2018",name:"ZFR-06",sub:"",desc:"1st in overall Static Events | 2nd in Design Evaluation | 2nd in Sales Presentation | 7th rank overall",specs:[["","",""],["","",""],["","",""]]},
+  {id:"zfr07",  img: img_zfr07, num:"07",badge:"",bc:MUTED,tag:"FSAE-AUSTRALASIA . 2019&2022 | FFS-INDIA", name:"ZFR-07",sub:"",desc:"Special Appreciation Award: Custom Harness Implementation | 13th overall rank among CVs . 2nd in Design Evaluation | 5th overall rank",specs:[["","",""],["","",""],["","",""]]},
+  {id:"zfr08",  img: img_zfr08, num:"08",badge:"",bc:MUTED,tag:"Formula Imperial . 2023",name:"ZFR-08",sub:"",desc:"1st in Business Plan and Cost | 3rd overall among CVs | 7th overall rank",specs:[["","",""],["","",""],["","",""]]},
 ];
 
 function CarsPage({highlightCar}){
@@ -345,6 +358,185 @@ function CarsPage({highlightCar}){
                       <div style={{fontFamily:"'Bebas Neue',sans-serif",fontSize:"1.5rem",color:GOLD,lineHeight:1}}>{v}</div>
                       <div style={{fontSize:".55rem",letterSpacing:".3em",color:GOLD_MID,textTransform:"uppercase"}}>{u}</div>
                       <div style={{fontSize:".55rem",letterSpacing:".25em",color:MUTED,textTransform:"uppercase",marginTop:2}}>{l}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </InnerPage>
+  );
+}*/
+const CARS_DATA = [
+  {id:"zfr01", img: img_zfr01, num:"01",badge:"",bc:GOLD,tag:"FS-JAPAN . 2014",name:"ZFR-01",sub:"",desc:"Most cost efficient car in the event.",specs:[["","",""],["","",""],["","",""]]},
+  {id:"zfr02", img: img_zfr02, num:"02",badge:"",bc:"#3af",tag:"FS-JAPAN & FDC . 2015",name:"ZFR-02",sub:"",desc:"Improved Documentation",specs:[["","",""],["","",""],["","",""]]},
+  {id:"zfr03", img: img_zfr03, num:"03",badge:"",bc:MUTED,tag:"FS-ITALY . 2016",name:"ZFR-03",sub:"",desc:"Revamped Powertrain 20% lighter than ZFR-02",specs:[["","",""],["","",""],["","",""]]},
+  {id:"zfr04", img: img_zfr04, num:"04",badge:"",bc:MUTED,tag:"FSAE-AUSTRALASIA . 2017",name:"ZFR-04",sub:"",desc:"First Indian team ever to clear technical inspection. Secured 16th Rank among CVs.",specs:[["","",""],["","",""],["","",""]]},
+  {id:"zfr05", img: img_zfr05, num:"05",badge:"",bc:MUTED,tag:"FSAE-AUSTRALASIA . 2018",name:"ZFR-05",sub:"",desc:"7th in Business Presentation | 10th in Cost Analysis | 13th rank overall among CVs",specs:[["","",""],["","",""],["","",""]]},
+  {id:"zfr06", img: img_zfr06, num:"06",badge:"",bc:MUTED,tag:"FFS-INDIA . 2018",name:"ZFR-06",sub:"",desc:"1st in overall Static Events | 2nd in Design Evaluation | 2nd in Sales Presentation | 7th rank overall",specs:[["","",""],["","",""],["","",""]]},
+  {id:"zfr07", img: img_zfr07, num:"07",badge:"",bc:MUTED,tag:"FSAE-AUSTRALASIA . 2019&2022 | FFS-INDIA", name:"ZFR-07",sub:"",desc:"Special Appreciation Award: Custom Harness Implementation | 13th overall rank among CVs . 2nd in Design Evaluation | 5th overall rank",specs:[["","",""],["","",""],["","",""]]},
+  {id:"zfr08", img: img_zfr08, num:"08",badge:"",bc:MUTED,tag:"Formula Imperial . 2023",name:"ZFR-08",sub:"",desc:"1st in Business Plan and Cost | 3rd overall among CVs | 7th overall rank",specs:[["","",""],["","",""],["","",""]]},
+];
+
+function CarsPage({highlightCar}) {
+  const cardRefs = useRef({});
+
+  useEffect(() => {
+    if (highlightCar && cardRefs.current[highlightCar]) {
+      setTimeout(() => {
+        cardRefs.current[highlightCar].scrollIntoView({ behavior: "smooth", block: "center" });
+      }, 200);
+    }
+  }, [highlightCar]);
+
+  return (
+    <InnerPage
+      eyebrow="02 — Cars"
+      headline={<>Our <span style={{ color: GOLD }}>Machines</span></>}
+      sub="Every car we build is a full engineering program — chassis, powertrain, electronics and aerodynamics, all student-designed and fabricated."
+    >
+      <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
+        {CARS_DATA.map((c) => {
+          const isHighlighted = highlightCar === c.id;
+
+          return (
+            <div
+              key={c.id}
+              ref={el => (cardRefs.current[c.id] = el)}
+              style={{
+                display: "grid",
+                gridTemplateColumns: "320px 1fr",
+                background: isHighlighted ? "rgba(212,160,23,.07)" : "rgba(255,255,255,.02)",
+                border: isHighlighted ? `1px solid ${GOLD}` : `1px solid ${GOLD_DIM}`,
+                boxShadow: isHighlighted ? `0 0 32px rgba(212,160,23,.25)` : "none",
+                transition: "all .4s",
+              }}
+            >
+              {/* LEFT IMAGE SECTION */}
+              <div
+                style={{
+                  background: "linear-gradient(135deg,#111008,#1a1408)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  minHeight: 220,
+                  position: "relative",
+                  overflow: "hidden",
+                }}
+              >
+                {/* Image */}
+                <img
+                  src={c.img}
+                  alt={c.name}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    opacity: 0.85,
+                    transition: "transform .4s ease",
+                  }}
+                />
+
+                {/* Overlay Number */}
+                <div
+                  style={{
+                    position: "absolute",
+                    fontFamily: "'Bebas Neue',sans-serif",
+                    fontSize: "6rem",
+                    color: "rgba(212,160,23,.15)",
+                    lineHeight: 1,
+                  }}
+                >
+                  {c.num}
+                </div>
+
+                {/* Badge */}
+                {c.badge && (
+                  <span
+                    style={{
+                      position: "absolute",
+                      top: 16,
+                      right: 16,
+                      padding: "4px 12px",
+                      fontSize: ".55rem",
+                      letterSpacing: ".4em",
+                      textTransform: "uppercase",
+                      background: c.bc,
+                      color: BG,
+                      fontWeight: 700,
+                    }}
+                  >
+                    {c.badge}
+                  </span>
+                )}
+
+                {/* Highlight Tag */}
+                {isHighlighted && (
+                  <div
+                    style={{
+                      position: "absolute",
+                      top: 16,
+                      left: 16,
+                      padding: "4px 12px",
+                      fontSize: ".5rem",
+                      letterSpacing: ".35em",
+                      textTransform: "uppercase",
+                      background: GOLD,
+                      color: BG,
+                      fontWeight: 700,
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 6,
+                    }}
+                  >
+                    <span>🏁</span> Competed Here
+                  </div>
+                )}
+              </div>
+
+              {/* RIGHT CONTENT */}
+              <div
+                style={{
+                  padding: "32px 36px",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                }}
+              >
+                <div style={{ fontSize: "1.25rem", letterSpacing: ".4em", color: GOLD, textTransform: "uppercase", marginBottom: 8 }}>
+                  {c.tag}
+                </div>
+
+                <div style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: "2rem", letterSpacing: ".06em", marginBottom: 12 }}>
+                  {c.name} <span style={{ color: GOLD }}>{c.sub}</span>
+                </div>
+
+                <p style={{ fontSize: ".85rem", color: MUTED, lineHeight: 1.7, marginBottom: 20 }}>
+                  {c.desc}
+                </p>
+
+                <div style={{ display: "flex" }}>
+                  {c.specs.map(([v, u, l], j) => (
+                    <div
+                      key={j}
+                      style={{
+                        padding: "12px 20px",
+                        border: `1px solid ${GOLD_DIM}`,
+                        borderRight: j < 2 ? "none" : `1px solid ${GOLD_DIM}`,
+                        textAlign: "center",
+                      }}
+                    >
+                      <div style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: "1.5rem", color: GOLD, lineHeight: 1 }}>
+                        {v}
+                      </div>
+                      <div style={{ fontSize: ".55rem", letterSpacing: ".3em", color: GOLD_MID, textTransform: "uppercase" }}>
+                        {u}
+                      </div>
+                      <div style={{ fontSize: ".55rem", letterSpacing: ".25em", color: MUTED, textTransform: "uppercase", marginTop: 2 }}>
+                        {l}
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -447,19 +639,39 @@ function TeamPage({activeDept,setActiveDept}){
 const CONTESTS_DATA = [
   {
     name: "Supra SAE India 2024",
-    type: "National · 2024",
+    type: "National",
     url: "https://supraindia.in/",
   },
   {
     name: "FMAE FFS India 2024",
-    type: "National · 2024",
+    type: "National",
     url: "https://www.fmae.in/",
   },
   {
     name: "Formula Imperial",
-    type: "National · 2023",
+    type: "National",
     url: "https://www.formulaimperial.in/",
   },
+  {
+    name:"FSAE-AUSTRALASIA",
+    type:"International",
+    url: "https://www.fsae.com.au/",
+  },
+  {
+    name:"FS-ITALY",
+    type:"International",
+    url: "https://www.formulastudent.it/",
+  },
+  {
+    name:"FS-JAPAN",
+    type:"International",
+    url: "https://www.formulastudent.jp/",
+  },
+  {
+    name:"FDC",
+    type:"International",
+    url: "https://www.fdc.com/",
+  }
 ];
 
 function ContestsPage() {
@@ -692,7 +904,15 @@ function FlagshipPage(){
 
 //HISTORY
 function HistoryPage(){
-  const items=[{year:"2022",left:true,title:"Team Founded",desc:"A group of engineering students form ZUURA Racing with a vision to compete in Formula SAE."},{year:"2023",left:false,title:"ZRF-08 Built",desc:"First car completed. Competed at Formula Imperial — placing 7th overall."},{year:"2023",left:true,title:"1st in Business & Cost",desc:"Formula Imperial: 1st in Business Plan and Cost, 6th in Engineering Design."},{year:"2024",left:false,title:"FMAE FFS India",desc:"1st in Engineering Design and 2nd in Business Plan at FMAE FFS India 2024."},{year:"2024",left:true,title:"Supra SAE 2024",desc:"12th in Engineering Design and 12th in Marketing at Supra SAE."},{year:"2025",left:false,title:"ZR-02 Electric Programme",desc:"Electric division launched — targeting Formula SAE Electric competitions."}];
+  const items=[{year:"2013",left:true,title:"Team Founded",desc:"A group of engineering students form ZUURA Racing with a vision to compete in Formula SAE."},
+    {year:"2014",left:false,title:"ZRF-01 Built",desc:"First car completed. Participated at FS-JAPAN — Marking as most efficient car in the event."},
+    {year:"2015",left:true,title:"FS-JAPAN & FDC",desc:"ZFR-02 had improved documentation"},
+    {year:"2016",left:false,title:"FS-ITALY",desc:"ZFR-03 Revamped Powertrain and was 20% lighter than ZFR-02."},
+    {year:"2017",left:true,title:"FSAE-AUSTRALASIA",desc:"With ZFR-04, we became the first Indian team ever to clear technical inspection and secured 16th rank among CVs."},
+    {year:"2018",left:false,title:"ZFR-05 & ZFR-06",desc:"ZFR-05 competed at FSAE-AUSTRALASIA and secured 7th in Business Presentation, 10th in Cost Analysis and 13th rank overall among CVs while ZFR-06 competed at FFS-INDIA and secured 1st in overall Static Events, 2nd in Design Evaluation, 2nd in Sales Presentation and 7th rank overall."},
+    {year:"2019",left:false,title:"FSAE-AUSTRALASIA",desc:"ZFR-07 competed and received Special Appreciation Award for Custom Harness Implementation while grabbing 13th rank overall among CVs."},
+    {year:"2022",left:false,title:"FFS-INDIA",desc:"ZFR-07 competed and secured 2nd in Design Evaluation and 5th overall rank."},
+    {year:"2023",left:true,title:"Formula Imperial",desc:"ZFR-08 competed and secured 1st in Business Plan and Cost, 3rd overall among CVs and 7th overall rank."}];
   return(
     <InnerPage eyebrow="07 — History" headline={<>Our <span style={{color:GOLD}}>Journey</span></>} sub="From a sketch on a whiteboard to the national stage — the story of ZUURA Racing.">
       <div style={{position:"relative",maxWidth:860,margin:"40px auto 0",padding:"0 24px"}}>
@@ -745,7 +965,7 @@ function NewsPage(){
     );
   }
   return(
-    <InnerPage eyebrow="08 — News" headline={<>Latest <span style={{color:GOLD}}>Updates</span></>} sub="Team announcements, competition results, recruitment drives, workshop recaps, and everything happening at ZUURA Racing.">
+    <InnerPage eyebrow="08 — News" headline={<>Latest <span style={{color:GOLD}}>Updates</span></>} sub="Team announcements, competition results, recruitment drives, workshop recaps and everything happening at ZUURA Racing.">
       <div style={{display:"flex",flexWrap:"wrap",gap:8,marginBottom:40}}>
         {cats.map(cat=><button key={cat} onClick={()=>setFilter(cat)} style={{padding:"8px 20px",fontFamily:"'Barlow Condensed',sans-serif",fontWeight:600,fontSize:".8rem",letterSpacing:".14em",textTransform:"uppercase",background:filter===cat?GOLD:"transparent",color:filter===cat?BG:MUTED,border:`1px solid ${filter===cat?GOLD:GOLD_DIM}`,cursor:"none",transition:"all .25s"}}>{cat}</button>)}
       </div>
@@ -879,7 +1099,7 @@ function ContactPage(){
       <Eyebrow>10 — Contact</Eyebrow>
       <h2 style={{fontFamily:"'Bebas Neue',sans-serif",fontSize:"clamp(2.5rem,6vw,5rem)",lineHeight:.95,margin:"12px 0 48px"}}>Get In <span style={{color:GOLD}}>Touch</span></h2>
       <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:1,marginBottom:48}}>
-        {[{icon:"📧",label:"Email Us",val:"admin@zurraracing.com",sub:""},{icon:"📍",label:"Find Us",val:"VIT, Chennai",sub:"Open Mon–Sat, 9AM–8PM"},{icon:"📱",label:"Social Media",val:"",sub:"Instagram · LinkedIn · YouTube"}].map(({icon,label,val,sub},i)=>(
+        {[{icon:"📧",label:"Email Us",val:"admin@zuuraracing.com",sub:""},{icon:"📍",label:"Find Us",val:"VIT, Chennai",sub:"Open Mon–Sat, 9AM–8PM"},{icon:"📱",label:"Social Media",val:"",sub:"Instagram · LinkedIn · YouTube"}].map(({icon,label,val,sub},i)=>(
           <div key={i} style={{padding:"32px 36px",border:`1px solid ${GOLD_DIM}`,background:"rgba(255,255,255,.02)",display:"flex",flexDirection:"column",gap:10}}>
             <span style={{fontSize:"2rem"}}>{icon}</span>
             <div style={{fontSize:".58rem",letterSpacing:".45em",color:GOLD,textTransform:"uppercase"}}>{label}</div>
@@ -910,7 +1130,7 @@ function ContactPage(){
       <div style={{display:"grid",gridTemplateColumns:"1.6fr 1fr",gap:40,alignItems:"start"}}>
         <div style={{border:`1px solid ${GOLD_DIM}`,padding:"44px 48px",background:"rgba(255,255,255,.015)"}}>
           <div style={{fontFamily:"'Bebas Neue',sans-serif",fontSize:"1.6rem",letterSpacing:".1em",marginBottom:6}}>Send Us A Message</div>
-          <p style={{fontSize:".82rem",color:MUTED,marginBottom:32,lineHeight:1.6}}>Whether you're interested in joining, sponsoring, or collaborating — fill in the form and we'll get back to you.</p>
+          <p style={{fontSize:".82rem",color:MUTED,marginBottom:32,lineHeight:1.6}}>Whether you're interested in joining, sponsoring or collaborating — fill in the form and we'll get back to you.</p>
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:12,marginBottom:12}}>
             <input name="name" value={form.name} onChange={handle} placeholder="Full Name *" style={inp}/>
             <input name="email" value={form.email} onChange={handle} placeholder="Email Address *" style={inp}/>
@@ -988,7 +1208,7 @@ function Footer({setActivePage}){
           ))}
         </div>
         <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",paddingTop:24,borderTop:`1px solid ${GOLD_DIM}`}}>
-          <span style={{fontSize:".72rem",color:"rgba(232,224,208,.25)"}}>© 2025 ZUURA Racing. All rights reserved.</span>
+          <span style={{fontSize:".72rem",color:"rgba(232,224,208,.25)"}}>© ZUURA Racing. All rights reserved.</span>
           <div style={{display:"flex",gap:24}}>
             {["Privacy","Terms","Media"].map(l=><button key={l} onClick={()=>setActivePage("contact")} style={{background:"none",border:"none",fontSize:".72rem",color:"rgba(232,224,208,.25)",cursor:"none",padding:0}}>{l}</button>)}
           </div>
